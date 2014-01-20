@@ -1,0 +1,31 @@
+{
+  "name": "pg-readable",
+  "version": "0.0.0",
+  "description": "High level shortcut to a readable query result stream for PostgreSQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brianc/node-pg-readable.git"
+  },
+  "keywords": [
+    "pg",
+    "postgres",
+    "readable",
+    "stream"
+  ],
+  "author": "Brian M. Carlson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brianc/node-pg-readable/issues"
+  },
+  "devDependencies": {
+    "mocha": "~1.17.0",
+    "pg.js": "~2.11.0"
+  },
+  "dependencies": {
+    "pg-query-stream": "~0.2.0"
+  }
+}
