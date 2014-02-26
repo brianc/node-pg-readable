@@ -26,6 +26,6 @@
     "pg.js": "~2.11.0"
   },
   "dependencies": {
-    "pg-query-stream": "~0.2.0"
+    "pg-query-stream": "~0.4.0"
   }
 }
