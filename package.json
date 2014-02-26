@@ -1,6 +1,6 @@
 {
   "name": "pg-readable",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "High level shortcut to a readable query result stream for PostgreSQL",
   "main": "index.js",
   "scripts": {
