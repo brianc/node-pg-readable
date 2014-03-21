@@ -23,9 +23,11 @@
   },
   "devDependencies": {
     "mocha": "~1.17.0",
-    "pg.js": "~2.11.0"
+    "pg.js": "~2.11.0",
+    "stream-reader": "^0.1.1",
+    "batch-stream": "0.0.1"
   },
   "dependencies": {
-    "pg-query-stream": "~0.4.0"
+    "pg-query-stream": "0.4.1"
   }
 }
