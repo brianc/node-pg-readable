@@ -1,6 +1,6 @@
 var QueryStream = require('pg-query-stream')
 
-var execute = function(Client, text, params) {
+var execute = function(Client, text, params, options) {
   var client = new Client()
   client.connect()
   client.on('drain', client.end.bind(client))
