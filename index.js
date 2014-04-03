@@ -4,7 +4,7 @@ var execute = function(Client, text, params) {
   var client = new Client()
   client.connect()
   client.on('drain', client.end.bind(client))
-  return client.query(new QueryStream(text, params))
+  return client.query(new QueryStream(text, params, options))
 }
 
 var getClient = function() {
@@ -19,9 +19,9 @@ var getClient = function() {
   }
 }
 
-module.exports = function(Client, text, params) {
+module.exports = function(Client, text, params, options) {
   if(typeof Client == 'string') {
-    return execute(getClient(), Client, text)
+    return execute(getClient(), Client, text, options)
   }
-  return execute(Client, text, params)
+  return execute(Client, text, params, options)
 }
