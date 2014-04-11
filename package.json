@@ -28,6 +28,6 @@
     "batch-stream": "0.0.1"
   },
   "dependencies": {
-    "pg-query-stream": "0.4.1"
+    "pg-query-stream": "0.4.2"
   }
 }
