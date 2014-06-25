@@ -21,7 +21,7 @@ var getClient = function() {
 
 module.exports = function(Client, text, params, options) {
   if(typeof Client == 'string') {
-    return execute(getClient(), Client, text, options)
+    return execute(getClient(), Client, text, params)
   }
   return execute(Client, text, params, options)
 }

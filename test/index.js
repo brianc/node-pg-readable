@@ -22,8 +22,9 @@ it('works with passed in constructor', function(done) {
 var reader = require('stream-reader')
 var batch = new (require('batch-stream'))({size: 37})
 it('works with slow consumer', function(done) {
-  var stream = pgreader('SELECT * FROM generate_series(0, 2000) num', [])
+  var stream = pgreader('SELECT * FROM generate_series(0, 2000) num', [], {batchSize: 1000})
   var count = 0
+  assert.equal(stream.batchSize, 1000)
   reader(stream.pipe(batch), function(rows, cb) {
     count += rows.length
     if(count == 2001) {
